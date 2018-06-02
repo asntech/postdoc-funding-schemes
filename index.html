@@ -7,6 +7,8 @@
 
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/jq-3.2.1/dt-1.10.16/datatables.min.css"/>
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.1/css/responsive.dataTables.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.5.1/css/buttons.dataTables.min.css">
+
 <meta name="google-site-verification" content="D2glK9POAUTARGptp6KUjwu9nPzEpCEwhVBUoQlW8AA" />
 <script type="text/javascript" src="https://cdn.datatables.net/v/bs/jq-3.2.1/dt-1.10.16/datatables.min.js"></script>
 <meta name="description" content="A detailed list of funding schemes and opportunities for Postdoc fellowships."/>
@@ -944,7 +946,7 @@
 						<td> </td>
 						</tr>
 						<tr>
-						<td><a target="_blank" href="http://www.aka.fi/en/funding/apply-now/our-funding-opportunities">Postdoctoral Researcher</a></td>
+						<td><a target="_blank" href="http://www.aka.fi/en/about-us/scientists-behind-the-research/postdoctoral-researchers/">Postdoctoral Researcher</a></td>
 						<td>Academy of Finland</td>
 						<td>Worldwide</td>
 						<td>Finland</td>
@@ -956,7 +958,7 @@
 						<td> </td>
 						</tr>
 						<tr>
-						<td><a target="_blank" href="http://www.aka.fi/en/funding/apply-now/our-funding-opportunities">Academy Research Fellow</a></td>
+						<td><a target="_blank" href="http://www.aka.fi/en/about-us/scientists-behind-the-research/academy-research-fellows/">Academy Research Fellow</a></td>
 						<td>Academy of Finland</td>
 						<td>Worldwide</td>
 						<td>Finland</td>
@@ -3099,14 +3101,18 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="https://cdn.datatables.net/responsive/2.2.1/js/dataTables.responsive.min.js"></script>
-
+<script src="https://cdn.datatables.net/buttons/1.5.1/js/dataTables.buttons.min.js"></script>
 
 
 <script type="text/javascript">
 // Read table data from objects
 $(document).ready(function() {
     $('#fundingTable').DataTable({
-    	 responsive: true
+    	 responsive: true,
+    	 //dom: 'Bfrtip',
+    	 buttons: [
+        	'copy', 'excel', 'pdf'
+           ]
     });
 } );
 
